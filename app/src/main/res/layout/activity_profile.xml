@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imgV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/digitalscag"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgV"
+        android:orientation="horizontal"
+        android:id="@+id/layout_text2"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_name"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/textViewUsername"
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_text2"
+        android:orientation="horizontal"
+        android:id="@+id/layout_text3"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_email"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/textViewUseremail"
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
