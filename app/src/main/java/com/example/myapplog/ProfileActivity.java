@@ -53,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
         txtViewUsrnm.setText(SharedPrefManage.getInstance(this).getUsername());
         url_int = (SharedPrefManage.getInstance(this).getUserId());
         url_id = Integer.toString(url_int);
-        url_string = "http://197.164.3.223/dbuser/v1/profile_image/" + url_id + ".jpeg";
+        url_string = "http" + url_id + ".jpeg";
         img = (CircleImageView) findViewById(R.id.imgV);
         ImageRequest imageRequest = new ImageRequest(url_string,
                 new Response.Listener<Bitmap>() {
